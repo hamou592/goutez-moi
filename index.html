@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goutez Moi - Traiteur Professionnel</title>
+  <meta name="description" content="Traiteur professionnel pour vos événements. Goutez Moi offre une cuisine raffinée, un service de qualité, et une expérience culinaire inoubliable." />
+  <meta name="author" content="Goutez Moi" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Goutez Moi - Traiteur Professionnel" />
+  <meta property="og:description" content="Découvrez une expérience culinaire unique avec Goutez Moi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="theme-color" content="#d35400" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+</head>
+<body>
+<!-- navbar section -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo" aria-label="Retour à l'accueil">Goutez Moi</a>
+      <nav class="navbar" id="navbar" aria-label="Navigation principale">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn" aria-label="Ouvrir le menu" onclick="toggleSidebar()">&#9776;</button>
+    </div>
+  </header>
+<!-- sidebar section -->
+  <aside class="sidebar" id="sidebar" aria-label="Menu latéral">
+    <button class="close-btn" aria-label="Fermer le menu" onclick="toggleSidebar()">&times;</button>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </aside>
+<!-- hero section -->
+  <main>
+    <section class="hero" role="banner">
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="video.mp4" type="video/mp4" />
+        Votre navigateur ne supporte pas la vidéo HTML5.
+      </video>
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Goutez Moi</h1>
+        <p>"Savourez l'excellence, vivez l'instant !"</p>
+      </div>
+    </section>
+  </main>
+    <!-- À propos Section -->
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="img.jpg" alt="Présentation du service traiteur Goutez Moi" loading="lazy" />
+    </div>
+    <div class="about-text">
+      <h2>À propos de nous</h2>
+      <p>
+        Depuis plus de 10 ans, <strong>Goutez Moi</strong> vous accompagne lors de vos événements avec passion et créativité.
+        Nous proposons une cuisine raffinée, élaborée à partir d’ingrédients frais et locaux, pour faire de chaque réception
+        un moment inoubliable. Mariages, séminaires, anniversaires – notre équipe s’engage à offrir un service irréprochable
+        et une expérience culinaire d’exception.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="services-section" aria-labelledby="services-title">
+    <h2 id="services-title">Nos Services</h2>
+  
+    <div class="services-grid">
+  
+      <div class="service-card" style="background-image: url('img4.webp');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Événements Privés</h3>
+          <p>Réceptions personnalisées pour vos mariages, anniversaires ou célébrations familiales.</p>
+        </div>
+      </div>
+  
+      <div class="service-card" style="background-image: url('img2.webp');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Buffets & Cocktails</h3>
+          <p>Buffets raffinés et cocktails dînatoires avec une touche créative et gastronomique.</p>
+        </div>
+      </div>
+  
+      <div class="service-card wide" style="background-image: url('img3.webp');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Entreprises</h3>
+          <p>Solutions traiteur pour séminaires, conférences et réunions d’affaires sur mesure.</p>
+        </div>
+      </div>
+  
+      <div class="service-card" style="background-image: url('img4.png');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Menus Personnalisés</h3>
+          <p>Des menus adaptés à vos envies et aux régimes spécifiques de vos invités.</p>
+        </div>
+      </div>
+  
+      <div class="service-card" style="background-image: url('img5.webp');">
+        <div class="overlay"></div>
+        <div class="content">
+          <h3>Livraison & Installation</h3>
+          <p>Service clé en main avec transport, installation et mise en place professionnelle.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <!-- Formulaire -->
+    <div class="contact-form">
+      <h2>Contactez-nous</h2>
+      <form id="whatsappForm">
+        <input type="text" id="name" placeholder="Votre nom complet" required />
+        <input type="email" id="email" placeholder="Votre adresse email" required />
+        <input type="tel" id="phone" placeholder="Numéro de téléphone" required />
+        <textarea id="message" rows="5" placeholder="Votre message ou demande..." required></textarea>
+        <button type="submit">Envoyer via WhatsApp</button>
+      </form>
+    </div>
+
+    <!-- Informations -->
+    <div class="contact-info">
+      <div class="info-box">
+        <h3><i class="fas fa-map-marker-alt"></i> Adresse</h3>
+        <p>Oran, Algérie</p>
+      </div>
+      <div class="info-box">
+        <h3><i class="fas fa-phone"></i> Téléphone</h3>
+        <p>+213 659 18 19 99</p>
+      </div>
+      <div class="info-box">
+        <h3><i class="fas fa-envelope"></i> Email</h3>
+        <p>contact@goutezmoi.com</p>
+      </div>
+      <div class="info-box">
+        <h3><i class="fas fa-share-alt"></i> Suivez-nous</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-container">
+    <p>&copy; 2025 Goutez Moi. Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
